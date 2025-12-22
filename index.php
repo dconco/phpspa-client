@@ -37,7 +37,9 @@ $app->meta(charset: 'UTF-8')
     ->link(rel: 'shortcut icon', content: '/assets/logo.svg', type: 'image/xml+svg')
     ->link(rel: 'apple-touch-icon', content: '/assets/logo.svg', type: 'image/xml+svg');
 
+
 // --- For Production ---
+
 if (getenv('APP_ENV') === 'production') {
     $app->compression(Compressor::LEVEL_EXTREME);
 
