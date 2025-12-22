@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dconco/phpspa.git",
-                "reference": "e64c916a8bb1c02820b0e419e631a91d542ce4e2"
+                "reference": "5b1f71d5ee2fc8c4c832a66ae2d48fb438406f1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dconco/phpspa/zipball/e64c916a8bb1c02820b0e419e631a91d542ce4e2",
-                "reference": "e64c916a8bb1c02820b0e419e631a91d542ce4e2",
+                "url": "https://api.github.com/repos/dconco/phpspa/zipball/5b1f71d5ee2fc8c4c832a66ae2d48fb438406f1c",
+                "reference": "5b1f71d5ee2fc8c4c832a66ae2d48fb438406f1c",
                 "shasum": ""
             },
             "require": {
@@ -79,7 +79,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-12-21T07:47:36+00:00"
+            "time": "2025-12-22T02:05:08+00:00"
         }
     ],
     "packages-dev": [],

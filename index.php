@@ -4,6 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use PhpSPA\App;
 use PhpSPA\Compression\Compressor;
+use PhpSPA\Http\Response;
 
 chdir(__DIR__);
 
@@ -55,3 +56,6 @@ if (getenv('APP_ENV') === 'production') {
 
 // --- Run the application ---
 $app->run();
+
+// --- Return 404 error if no route was matched ---
+Response::sendError('Page not found', Response::StatusNotFound);
