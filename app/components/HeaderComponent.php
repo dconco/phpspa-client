@@ -3,7 +3,8 @@
 use function Component\import;
 
 function HeaderComponent() {
-   $logo = import(__DIR__ . '/../../public/assets/logo.svg');
+   var_dump(glob(__DIR__ . '../../public/*'));
+   $logo = import('public/logo.svg');
 
    return <<<HTML
       <span class="pill">
