@@ -3,7 +3,6 @@
 use function Component\import;
 
 function HeaderComponent() {
-   var_dump(glob(__DIR__ . '../../public/*'));
    $logo = import('public/logo.svg');
 
    return <<<HTML
