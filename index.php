@@ -4,6 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use PhpSPA\App;
 use PhpSPA\Compression\Compressor;
+use PhpSPA\Core\Http\HttpRequest;
 use PhpSPA\Http\Response;
 
 chdir(__DIR__);
@@ -45,10 +46,13 @@ if (getenv('APP_ENV') === 'production') {
     $app->compression(Compressor::LEVEL_EXTREME);
 
     // --- Apply Canonical Link ---
-    $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+    $req = new HttpRequest();
+    $path = $req->getUri();
+    $scheme = $req->isHttps() ? 'https' : 'http';
+
     $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
-    $path = strtok($_SERVER['REQUEST_URI'] ?? '/', '?') ?: '/';
     $baseUrl = rtrim(getenv('APP_URL') ?: "$scheme://$host", '/');
+
     $canonicalUrl = $baseUrl . $path;
 
     $app->link(rel: 'canonical', content: $canonicalUrl);
