@@ -4,24 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8cb4a2975490a7b3a0542ae44c56fa2a",
+    "content-hash": "64a672b5e93faad53254023f22f5bfdb",
     "packages": [
         {
             "name": "dconco/phpspa",
-            "version": "v2.0.5.x-dev",
+            "version": "v2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dconco/phpspa.git",
-                "reference": "5b1f71d5ee2fc8c4c832a66ae2d48fb438406f1c"
+                "reference": "3317c61047a801929b3284b57f648a8663e84ec5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dconco/phpspa/zipball/5b1f71d5ee2fc8c4c832a66ae2d48fb438406f1c",
-                "reference": "5b1f71d5ee2fc8c4c832a66ae2d48fb438406f1c",
+                "url": "https://api.github.com/repos/dconco/phpspa/zipball/3317c61047a801929b3284b57f648a8663e84ec5",
+                "reference": "3317c61047a801929b3284b57f648a8663e84ec5",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0"
             },
             "type": "library",
             "autoload": {
@@ -46,7 +49,7 @@
                 {
                     "name": "Dave Conco",
                     "email": "me@dconco.tech",
-                    "homepage": "https://dconco.github.io",
+                    "homepage": "https://dconco.tech",
                     "role": "Author & Maintainer"
                 },
                 {
@@ -67,7 +70,7 @@
             ],
             "support": {
                 "issues": "https://github.com/dconco/phpspa/issues",
-                "source": "https://github.com/dconco/phpspa/tree/v2.0.5"
+                "source": "https://github.com/dconco/phpspa/tree/v2.0.7"
             },
             "funding": [
                 {
@@ -79,15 +82,13 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-12-22T02:05:08+00:00"
+            "time": "2026-02-01T09:02:15+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "dconco/phpspa": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
